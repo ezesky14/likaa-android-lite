@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infobus_sans_sotra"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:context="com.ezesky.likaa.MainActivity">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            //RELATIVELAYOUT 1
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp">
+
+
+                <ImageView
+                    android:id="@+id/im_fbk"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/facebook" />
+
+
+                <ImageView
+                    android:id="@+id/im_param"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_action_settings"
+
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/img_acc"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo1" />
+
+
+                <TextView
+                    android:id="@+id/l"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_acc"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Choisissez un moyen de transport"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_bus"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/l"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/md_green_500_75"
+                    android:onClick="bus_Click"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+
+
+                    android:paddingBottom="16dp"
+                    android:text="bus"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btn_taxi"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_bus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/md_orange_500_75"
+                    android:onClick="taxi_Click"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="taxi"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btn_gbaka"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_taxi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/md_blue_500_75"
+                    android:onClick="gbaka_Click"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="gbaka"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="30sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

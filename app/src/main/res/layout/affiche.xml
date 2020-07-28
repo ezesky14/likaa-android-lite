@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+    <TextView
+        android:background="@color/md_green_500_50"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+
+        android:id="@+id/ligne_bus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/numero_de_bus"
+        android:textColor="#ffffff"
+
+        />
+
+    <ImageView
+        android:id="@+id/type_bus_img"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+
+        />
+
+    <TextView
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/md_amber_500_50"
+        android:gravity="center"
+        android:text="@string/arriv_e_du_bus"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="75dp"
+        android:id="@+id/textView2"
+        android:layout_width="30dp"
+        android:background="@color/md_amber_500_50"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="de"
+        android:textColor="#ffffff" />
+
+    <TextView
+
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/arr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/md_amber_500_50"
+        android:gravity="center"
+        android:text="@string/depart_du_bus"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="75dp"
+        android:background="@color/md_amber_500_50"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" à "
+        android:textColor="#ffffff" />
+
+
+    <View
+        android:background="#222222"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:text=" à "
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

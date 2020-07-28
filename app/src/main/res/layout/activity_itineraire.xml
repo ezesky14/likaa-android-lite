@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infobus_sans_sotra"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:context="com.ezesky.likaa.Bus.ItineraireActivity">
+
+    //layout 1
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/md_grey_500_25"
+            android:elevation="4dp"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp" >
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:theme="@style/Base.Widget.AppCompat.TextView.SpinnerItem" />
+
+            <TextView
+                android:id="@+id/lab_moy_tp_iti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="Moyens de transports disponibles" />
+
+
+            <TextView
+                android:id="@+id/moy_tp_iti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lab_moy_tp_iti"
+                android:layout_marginTop="10dp"
+                android:background="@color/md_blue_500_25"
+                android:gravity="center"
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+
+            <TextView
+                android:id="@+id/lab_type_iti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moy_tp_iti"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="Type d'itineraire" />
+
+
+            <TextView
+                android:id="@+id/type_iti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lab_type_iti"
+                android:layout_marginTop="10dp"
+                android:background="@color/md_blue_500_25"
+                android:gravity="center"
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+
+            <TextView
+                android:id="@+id/lab_detail_iti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_iti"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="Consignes" />
+
+            <TextView
+                android:id="@+id/detail_iti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lab_detail_iti"
+                android:layout_marginTop="10dp"
+                android:background="@color/md_blue_500_25"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+
+            <Button
+                android:id="@+id/Btn_Affichmap"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/detail_iti"
+                android:layout_marginTop="10dp"
+                android:onClick="Map_Click"
+                android:text="Afficher l'itineraire sur google MAP" />
+
+
+            <Button
+                android:id="@+id/Btn_Affichmoyen_tp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Btn_Affichmap"
+                android:layout_marginTop="10dp"
+                android:onClick="Tp_Click"
+                android:text="Afficher le detail des moyens de transports utilisés" />
+
+            <AdapterViewFlipper
+                android:id="@+id/checkedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Btn_Affichmoyen_tp"
+                android:text="New CheckedTextView" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

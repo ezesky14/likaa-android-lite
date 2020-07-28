@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:id="@+id/nom_taxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TAXI"
+        android:background="@color/md_grey_500_50"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/de"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="DE"
+        android:layout_below="@+id/nom_taxi"
+        android:layout_marginTop="10dp"
+        android:background="@color/md_orange_500_50"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+
+        />
+    <TextView
+        android:id="@+id/dep_taxi"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="DEPART"
+        android:layout_below="@+id/nom_taxi"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/md_orange_500_50"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:text="A"
+        android:background="@color/md_orange_500_50"
+        android:layout_below="@+id/dep_taxi"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+
+        />
+
+
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/arr_taxi"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="ARRET"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/dep_taxi"
+        android:background="@color/md_orange_500_50"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/type_taxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:layout_below="@+id/arr_taxi"
+        android:layout_marginTop="10dp"
+        android:background="@color/md_grey_500_50"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        />
+    <TextView
+        android:id="@+id/prix_taxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRIX"
+     android:layout_below="@+id/arr_taxi"
+        android:layout_toRightOf="@+id/type_taxi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/md_grey_500_50"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prix_taxi"
+        android:background="@color/md_black_1000"
+
+        />
+
+
+
+
+</RelativeLayout>

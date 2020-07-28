@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ezesky.likaa">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/likaa_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Bus.BusActivity" />
+        <activity android:name=".Bus.ResultBusActivity" />
+        <activity android:name=".Bus.Other_searchActivity" />
+        <activity android:name=".Bus.AllbusActivity" />
+        <activity android:name=".Bus.RueActivity" />
+        <activity android:name=".Bus.BusMainActivity" />
+        <activity android:name=".Bus.ResultActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".Bus.ItineraireActivity" />
+        <activity android:name=".Bus.Detail_TpActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/num_bus2"
+        android:layout_width="50dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/md_green_500_50"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="BUS"
+
+        />
+
+
+    <TextView
+        android:id="@+id/prix_bus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/md_green_500_50"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="PRIX"
+        android:textSize="20dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/md_amber_500_50"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="DE"
+
+        />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/md_amber_500_50"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:text="A"
+        android:textSize="17dp"
+
+        />
+
+    <TextView
+        android:id="@+id/dep_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/md_amber_500_50"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="DEPART"
+
+        />
+
+    <TextView
+        android:id="@+id/arr_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/md_amber_500_50"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="ARRET"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/md_black_1000"
+
+        />
+
+
+</RelativeLayout>

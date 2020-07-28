@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abidjan2"
+    android:id="@+id/navigation_drawer_layout"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ToolbarTheme"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="61dp"
+        >
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.ezesky.likaa.Bus.BusActivity"
+
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            >
+
+
+
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:text="1-) Entrez votre position de départ \n2-)Entrez votre destination"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img1"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+
+                />
+
+            <AutoCompleteTextView
+                android:contentDescription="pp"
+                android:id="@+id/rue1_bus"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:ems="10"
+                android:hint="@string/hint_depart"
+                android:inputType="text"
+                >
+
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/rue2_bus"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rue1_bus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/hint_destination"
+                android:inputType="text"
+                >
+
+            </AutoCompleteTextView>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/Search_button2"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rue2_bus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:text="rechercher"
+
+                android:onClick="Bus_Click"
+
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="@bool/fitsSystemWindows"
+        app:menu="@menu/navigation_drawer_menu_bus"
+        android:theme="@style/NavigationViewTheme_Bus" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

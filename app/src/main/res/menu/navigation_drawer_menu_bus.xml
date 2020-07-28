@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single"
+
+        >
+        <item
+            android:checked="true"
+            android:id="@+id/item_rec_bus"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="infos sur une ligne de bus" />
+        <item
+            android:id="@+id/item_tout_les_bus"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="Toutes les lignes de bus"
+            />
+        <item
+            android:id="@+id/item_rec_lieu_bus"
+            android:icon="@drawable/ic_action_content_send"
+            android:title="Recherche a partir d'une rue" />
+
+        <item
+            android:id="@+id/item_rec_2_lieux_bus"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="Recherches avancées" />
+        <item
+            android:id="@+id/item_iti"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="Guide des itinéraires" />
+
+    </group>
+
+
+</menu>

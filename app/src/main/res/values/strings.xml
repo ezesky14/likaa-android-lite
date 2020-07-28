@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">LiKaa</string>
+
+    <string name="accueil">Retourner à la page d\' accueil</string>
+
+    <string name="fbk">Allez sur la page Facebook </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="hint_destination">Destination</string>
+    <string name="page_fbk">Page officielle facebook</string>
+    <string name="hint_depart">Position de départ</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="title_activity_maps1">Map</string>
+    <string name="title_activity_gbaka">GbakaActivity</string>
+    <string name="title_activity_result__bus">Result_BusActivity</string>
+
+
+    <string name="num_bus">BUS</string>
+    <string name="depart_bus">DEPART</string>
+    <string name="terminus_bus">ARRIVEE</string>
+    <string name="detail_bus">DETAIL</string>
+    <string name="id_type_bus">TYPE DE BUS</string>
+    <string name="prix">PRIX</string>
+
+    <string name="rechercher">Rechercher</string>
+    <string name="Info2">sélectionnez une ligne de bus</string>
+    <string name="Info3">selectionnez un lieu </string>
+    <string name="Info4">Liste des lignes de bus desservant à ce lieu </string>
+
+
+    <string name="Info5">Veillez entrer la rue ou vous vous trouvez actuelement</string>
+    <string name="Info6">Veillez entrer la rue ou vous souhaitiez aller </string>
+
+
+    <string name="res_bus">RESULTAT BUS</string>
+    <string name="prix1">500 FCFA</string>
+    <string name="prix2">200 FCFA</string>
+    <string name="numero_de_bus">numero de bus</string>
+    <string name="depart_du_bus">depart du bus</string>
+    <string name="arriv_e_du_bus">arrivée du bus</string>
+    <string name="ligne_allant_de_">"Ligne allant de "</string>
+    <string name="todo">TODO</string>
+    <string name="toutes_les_lignes">toutes les lignes</string>
+    <string name="recherche_par_lieu">recherche par lieu</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_test_result">TestResultActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_taxi_main">TaxiMainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
